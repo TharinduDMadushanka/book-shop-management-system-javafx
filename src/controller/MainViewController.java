@@ -1,16 +1,22 @@
 package controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
-public class DashBoardController {
+import java.io.IOException;
+
+public class MainViewController {
     public AnchorPane mainContext;
     public AnchorPane dashBoardContext;
+    public AnchorPane bookContext;
 
     public void dashBoardOnAction(ActionEvent actionEvent) {
+        setUI("/view/dashBoardContext");
     }
 
     public void availableBooksOnAction(ActionEvent actionEvent) {
+        setUI("/view/bookContext");
     }
 
     public void purchaseOnAction(ActionEvent actionEvent) {
@@ -29,5 +35,14 @@ public class DashBoardController {
     }
 
     public void deleteOnAction(ActionEvent actionEvent) {
+    }
+
+    private void setUI(String location){
+        try {
+            mainContext.getChildren().clear();
+            mainContext.getChildren().add(FXMLLoader.load(getClass().getResource(location + ".fxml")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

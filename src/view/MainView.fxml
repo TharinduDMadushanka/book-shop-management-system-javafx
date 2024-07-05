@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <BorderPane layoutX="58.0" layoutY="27.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="600.0" prefWidth="219.0" stylesheets="@../style/dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="77.0" layoutY="86.0" size="7EM" />
+                  <Label layoutX="68.0" layoutY="105.0" prefHeight="27.0" prefWidth="83.0" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="110.0" layoutY="145.0" startX="-100.0" />
+                  <Button layoutX="20.0" layoutY="171.0" mnemonicParsing="false" onAction="#dashBoardOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Dashboard">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DASHBOARD" size="1.5EM" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="224.0" mnemonicParsing="false" onAction="#availableBooksOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Available Books">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5EM" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="280.0" mnemonicParsing="false" onAction="#purchaseOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Purchase">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" size="1.5EM" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#signOutOnAction" stylesheets="@../style/dashboard.css">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="2em" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="sign-out" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="nav-form" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="mainContext" prefHeight="568.0" prefWidth="849.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
