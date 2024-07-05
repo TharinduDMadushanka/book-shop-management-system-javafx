@@ -31,6 +31,7 @@ public class LogingFormController {
 
         if (selectAdmin.isPresent()) {
             if (password.equals(selectAdmin.get().getPassword())) {
+                new Alert(Alert.AlertType.INFORMATION,"Successfully logged in!").show();
                 setUI("DashBoard");
             } else {
                 new Alert(Alert.AlertType.ERROR, "Email or Password Incorrect...!").show();
