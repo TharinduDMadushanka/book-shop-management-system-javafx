@@ -1,5 +1,7 @@
 package db;
 
+import model.Admin;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -24,6 +26,14 @@ public class DBConnection {
 //        return connection;
 //    }
 
-    public static ArrayList<User> userTable = new ArrayList();
+    public static ArrayList<Admin> userTable = new ArrayList();
+
+    static {
+        userTable.add(new Admin(
+                1,
+                "a",
+                "1"
+        ));
+    }
 
 }
