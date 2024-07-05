@@ -1,0 +1,30 @@
+.nav-form{
+    -fx-background-color:linear-gradient(to top right, #3c2c21, #93773e);
+}
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-alignment: CENTER-LEFT;
+}
+.sign-out{
+    -fx-background-color: #477859;
+    -fx-cursor:hand;
+    -fx-background-radius: 10px;
+}
+.sign-out:hover{
+    -fx-background-color: #58ae78;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8,0,0,0);
+}
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+.card{
+    -fx-background-color: linear-gradient(to right, #294c46, #2d7256);
+    -fx-background-radius: 4px;
+}
