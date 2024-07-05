@@ -15,7 +15,7 @@
          <left>
             <AnchorPane prefHeight="600.0" prefWidth="219.0" stylesheets="@../style/dashboard.css" BorderPane.alignment="CENTER">
                <children>
-                  <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="77.0" layoutY="86.0" size="7EM" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="68.0" layoutY="86.0" size="7EM" />
                   <Label layoutX="68.0" layoutY="105.0" prefHeight="27.0" prefWidth="83.0" text="Welcome" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />

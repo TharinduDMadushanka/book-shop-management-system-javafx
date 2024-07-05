@@ -16,5 +16,6 @@ public class AvailableBookController {
     }
 
     public void clearOnAction(ActionEvent actionEvent) {
+
     }
 }

@@ -8,15 +8,13 @@ import java.io.IOException;
 
 public class MainViewController {
     public AnchorPane mainContext;
-    public AnchorPane dashBoardContext;
-    public AnchorPane bookContext;
 
     public void dashBoardOnAction(ActionEvent actionEvent) {
-        setUI("/view/dashBoardContext");
+        setUI("/view/DashBoard");
     }
 
     public void availableBooksOnAction(ActionEvent actionEvent) {
-        setUI("/view/bookContext");
+        setUI("/view/AvailableBook");
     }
 
     public void purchaseOnAction(ActionEvent actionEvent) {
