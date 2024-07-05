@@ -30,22 +30,22 @@
                      </font>
                   </Label>
                   <Line endX="100.0" layoutX="110.0" layoutY="145.0" startX="-100.0" />
-                  <Button layoutX="20.0" layoutY="171.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Dashboard">
+                  <Button layoutX="20.0" layoutY="171.0" mnemonicParsing="false" onAction="#dashBoardOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Dashboard">
                      <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="DASHBOARD" size="1.5EM" />
                      </graphic>
                   </Button>
-                  <Button layoutX="20.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Available Books">
+                  <Button layoutX="20.0" layoutY="224.0" mnemonicParsing="false" onAction="#availableBooksOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Available Books">
                      <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5EM" />
                      </graphic>
                   </Button>
-                  <Button layoutX="20.0" layoutY="280.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Purchase">
+                  <Button layoutX="20.0" layoutY="280.0" mnemonicParsing="false" onAction="#purchaseOnAction" prefHeight="40.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../style/dashboard.css" text="Purchase">
                      <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" size="1.5EM" />
                      </graphic>
                   </Button>
-                  <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" stylesheets="@../style/dashboard.css">
+                  <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#signOutOnAction" stylesheets="@../style/dashboard.css">
                      <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="2em" />
                      </graphic>
@@ -64,7 +64,7 @@
          <center>
             <AnchorPane fx:id="mainContext" prefHeight="568.0" prefWidth="849.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane fx:id="dashBoardContext" layoutX="159.0" layoutY="87.0" prefHeight="600.0" prefWidth="880.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane fx:id="dashBoardContext" layoutX="159.0" layoutY="87.0" prefHeight="600.0" prefWidth="880.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="570.0" prefWidth="850.0" stylesheets="@../style/dashboard.css">
                            <styleClass>
@@ -161,7 +161,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="bookContext" layoutX="63.0" layoutY="44.0" prefHeight="600.0" prefWidth="880.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane fx:id="bookContext" layoutX="63.0" layoutY="44.0" prefHeight="600.0" prefWidth="880.8" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="574.0" prefWidth="294.0" stylesheets="@../style/dashboard.css">
                            <styleClass>
@@ -231,10 +231,10 @@
                                     <Font name="Arial" size="14.0" />
                                  </font>
                               </Label>
-                              <Button layoutX="66.0" layoutY="456.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Add" />
-                              <Button layoutX="198.0" layoutY="456.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Update" />
-                              <Button layoutX="66.0" layoutY="514.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Clear" />
-                              <Button layoutX="198.0" layoutY="514.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Delete" />
+                              <Button layoutX="66.0" layoutY="456.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="35.0" prefWidth="80.0" text="Add" />
+                              <Button layoutX="198.0" layoutY="456.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="35.0" prefWidth="80.0" text="Update" />
+                              <Button layoutX="66.0" layoutY="514.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="35.0" prefWidth="80.0" text="Clear" />
+                              <Button layoutX="198.0" layoutY="514.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="35.0" prefWidth="80.0" text="Delete" />
                            </children>
                         </AnchorPane>
                         <AnchorPane layoutX="326.0" layoutY="13.0" prefHeight="574.0" prefWidth="543.0" stylesheets="@../style/dashboard.css">
